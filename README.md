@@ -11,16 +11,17 @@ This SDK build implements **getTLSTransportStrategy** method for **smartDialerOp
 Init **StreamDialer** via **NewSmartDialerOptions**:
 
 ```
-guard let smartDialerOptions = MobileproxyNewSmartDialerOptions(testDomains, yamlConfig)
+
+// Create SmartDialerOptions instance to run against testDomains and strategies config (yaml/json)
+guard let smartDialerOptions = MobileproxyNewSmartDialerOptions(testDomains, config)
 
 do {
 	
-	// Create the Smart StreamDialer
-
+	// Create new StreamDialer via smartDialerOptions
     let dialer = try smartDialerOptions.newStreamDialer()
     print("✅ StreamDialer created successfully")
 
-    // Print selected TLS strategy in console
+    // Log winning TLS strategy
     print("TLS Transport: " + smartDialerOptions.getTLSTransportStrategy())
 
     // Start the proxy server
@@ -34,4 +35,16 @@ do {
 ```
 
 ### On Android
-//TODO
+```
+// Create SmartDialerOptions instance to run against testDomains and strategies config (yaml/json)
+streamDialerOptions = Mobileproxy.newSmartDialerOptions(Mobileproxy.newListFromLines(testDomains), jsonConfig) 
+
+// Create new StreamDialer via smartDialerOptions
+streamDialer = streamDialerOptions?.newStreamDialer()
+
+// Log winning TLS strategy
+Log.d("OUTLINE", streamDialerOptions?.getTLSTransportStrategy().toString())
+
+// Start the proxy server
+proxy = Mobileproxy.runProxy("localhost:0", streamDialer)
+```
