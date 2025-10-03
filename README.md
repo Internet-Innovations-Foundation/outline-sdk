@@ -1,7 +1,5 @@
 ## Outline SDK Fork for iOS and Android
 
-[![](https://jitpack.io/v/r-mobile/outline_sdk.svg)](https://jitpack.io/#r-mobile/outline_sdk)
-
 This repository contains Outline SDK packages for Android and iOS 15+, gomobile built from the [fork](https://github.com/joeface/outline-sdk) of the [Outline MobileProxy](https://github.com/Jigsaw-Code/outline-sdk/tree/main/x/mobileproxy).
 
 You can build these libraries using the instructions from the [Outline](https://github.com/Jigsaw-Code/outline-sdk/tree/main/x/mobileproxy#build-the-mobileproxy-libraries-for-android-and-ios) source code. 
@@ -22,7 +20,7 @@ Adding the framework to your Xcode project:
 - The framework will be downloaded, linked, and signed automatically.
 
 ```
-// Init **StreamDialer** via **NewSmartDialerOptions**:
+// Init StreamDialer via NewSmartDialerOptions
 // Create SmartDialerOptions instance to run against testDomains and strategies config (yaml/json)
 guard let smartDialerOptions = MobileproxyNewSmartDialerOptions(testDomains, config)
 
