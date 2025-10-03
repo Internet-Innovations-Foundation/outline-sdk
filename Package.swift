@@ -1,10 +1,10 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.53
 import PackageDescription
 
 let package = Package(
     name: "Mobileproxy",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v15)
     ],
     products: [
         .library(name: "Mobileproxy", targets: ["mobileproxy"])
