@@ -14,7 +14,7 @@ This SDK build [implements](https://github.com/joeface/outline-sdk/blob/main/x/m
 ### On iOS 
 Adding the framework to your Xcode project:
 - Open your app in Xcode.
-- Go to: File > Add Packages.
+- Go to: File > Add Packages Dependencies.
 - Enter repo URL (e.g. https://github.com/Internet-Innovations-Foundation/outline-sdk).
 - Select Outline MobileProxy and add it to your target.
 - The framework will be downloaded, linked, and signed automatically.
