@@ -1,0 +1,33 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : {
+          "xcframework" : {
+
+          }
+        },
+        "packageRef" : {
+          "identity" : "outline-sdk",
+          "kind" : "root",
+          "location" : "/Users/joeface/dev/outline-sdk",
+          "name" : "outline-sdk"
+        },
+        "path" : "/Users/joeface/dev/outline-sdk/.build/artifacts/outline-sdk/mobileproxy/mobileproxy.xcframework",
+        "source" : {
+          "checksum" : "1c9637f10f4f7534472d159af07b893ff4df5c2f7d1af4ca464868e667ea37a3",
+          "type" : "remote",
+          "url" : "https://github.com/Internet-Innovations-Foundation/outline-sdk/releases/download/1.0.6/mobileproxy.xcframework.zip"
+        },
+        "targetName" : "mobileproxy"
+      }
+    ],
+    "dependencies" : [
+
+    ],
+    "prebuilts" : [
+
+    ]
+  },
+  "version" : 7
+}
