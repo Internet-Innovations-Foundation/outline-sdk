@@ -2,20 +2,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "Outline MobileProxy",
+    name: "OutlineMobileProxy",
     platforms: [
         .iOS(.v15)
     ],
     products: [
         .library(
-            name: "Outline MobileProxy",
-            targets: ["MobileProxyFramework"]
+            name: "OutlineMobileProxy",
+            targets: ["mobileproxy"]
         ),
     ],
     targets: [
         .binaryTarget(
-            name: "MobileProxyFramework",
-            url: "https://github.com/Internet-Innovations-Foundation/outline-sdk/mobileproxy.xcframework.zip",
+            name: "mobileproxy",
+            url: "https://github.com/Internet-Innovations-Foundation/outline-sdk/releases/download/1.0.6/mobileproxy.xcframework.zip",
             checksum: "1c9637f10f4f7534472d159af07b893ff4df5c2f7d1af4ca464868e667ea37a3"
         ),
     ]
