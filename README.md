@@ -11,6 +11,9 @@ This SDK build [implements](https://github.com/joeface/outline-sdk/blob/main/x/m
 
 This experimental release introduces proxy server bandwidth and traffic measurement capabilities. [Learn more](https://github.com/joeface/outline-sdk/commit/299c58ebbd6601609ef632d3b7f5804451fdec0f).
 
+//TODO
+Explain dialer.RunSpeedUpdater dialer.GetSpeeds()
+
 ## Integration
 
 ### On iOS 
